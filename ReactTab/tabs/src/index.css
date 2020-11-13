@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  display: flex;
+}
+.leftPane{
+  position:absolute;
+  top:0px;
+  bottom: 0px;
+  overflow: auto;
+  width:150px;
+  background-color: gray;
+}
+.rightPane{
+  position:absolute;
+  top:0px;
+  left:150px;
+  bottom: 0px;
+  width:calc(100% - 150px);
+  overflow: auto;
+}
+.card{
+  width: 109px;
+  height:137px;
+  background-color: brown;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: larger;
+  
+}
+.hearts{
+  background-image: url('./images/Hearts.png');
+}
+.spades{
+  background-image: url('./images/Spade.png');
+}
+.clubs{
+  background-image: url('./images/clubs.png');
+}
+.diamonds{
+  background-image: url('./images/Diamonds.png');
+}
+.caraCards{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 10px;
+}
+.caraCard{
+  height: 200px;
+  padding: 10px;
+  background-color: brown;
+  border: 1px solid black;
+  width:150px;
+  margin: 10px;
+  box-shadow: 5px ;
+}
+.btnContainer{
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.title{
+  margin-left:10px;
+}
