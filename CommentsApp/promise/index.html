@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            [{
+                comments :"",
+                comment
+
+            }]
+        </script>
+        <style>
+            ul,li{
+                
+                list-style: none;
+                margin: 0%;
+                padding: 0px;
+            }
+            .main-list{
+                border: 1px solid gray;
+            }
+            .main-list li ul{
+                border-left: 1px solid green;
+                margin-left:30px;
+                border: 1px solid gray;
+            }
+            .main-list li ul::before{
+                content: 'sadfs';
+                border-top: 1px solid green;
+                width:40px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <ul class="main-list">
+            <li>
+                <div class="comments">
+                      <a>user1</a>
+                     <p>some comments will come here</p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="comments">
+                             <a>user2</a>
+                             <p>some comments will come here</p>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="comments">
+                                     <a>user2</a>
+                                     <p>some comments will come here</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

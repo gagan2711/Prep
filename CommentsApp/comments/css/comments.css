@@ -1,0 +1,14 @@
+.mainApp {
+	margin: 0px;
+	background-color: gray;
+}
+.mainApp ul,
+li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.comment {
+	border: 1px solid gray;
+	margin-left: 40px !important;
+}

@@ -1,0 +1,114 @@
+.listContainer {
+    height: 450px;
+    background-color: #FAD6CA;
+    width: 50%;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+}
+.header {
+    width: 50%;
+    min-width: 450px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #F37E87;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+.listItem:first-child .btnUp {
+    visibility: hidden;
+    background-color: transparent;
+}
+.listItem {
+    border-bottom: 1px solid #F37E87;
+    height: 50px;
+    background-color: white;
+    min-width: 100%;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    background-size: 30px 30px !important;
+}
+.addBtn:disabled {
+    background-color: #FAD6CA;
+    color: gray;
+}
+.addBtn {
+    line-height: 35px;
+    -webkit-line-height: 35px;
+    -moz-line-height: 36px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: black;
+    background-color: #B03621;
+    background-size: 30px 30px !important;
+    position: relative;
+    top:-1px;
+}
+.btnCancel {
+    background: transparent url("images/cancel.svg") no-repeat center;
+}
+.btnUp {
+    background: transparent url("images/arrow.svg") no-repeat center;
+}
+.btnDone {
+    background: transparent url("images/checked.svg") no-repeat center;
+}
+.addBtn:hover:enabled {
+    background-color: #B03621 !important;
+}
+.btn:hover {
+    background-color: #F37E87;
+}
+.listItem div {
+    display: inline-block;
+    height: 50px;
+}
+.msgBlock {
+    width: calc(100% - 150px);
+    line-height: 50px;
+    vertical-align: top;
+    padding-left: 15px;
+    font-size: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+.header > input {
+    height: 35px;
+    width: 70%;
+    padding-left: 15px;
+    font-size: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    line-height: 35px;
+}
+.selectedItem {
+    background-color: grey;
+}
+.selectedItem .msgBlock {
+    text-decoration: line-through;
+}
+.floatRight {
+    float: right;
+}
+.title {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .addBtn { 
+        top: 0px;
+    }
+}
