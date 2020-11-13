@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="menu.css"/>
+    <style>
+        #demo{
+            height:500px;
+            background-color: red;
+        }
+        #myDIV{
+            border: 1px solid black;
+            width: 200px;
+            overflow: auto;
+            height: 100px;
+        }
+        </style>
+</head>
+<body>
+    <div id="myDIV">    
+        <div id="myDIV2">
+            In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+        <br><br>
+        'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+    </div>
+<p id="demo"></p>
+
+<script>
+document.getElementById("myDIV").addEventListener("scroll", myFunction(function(){
+    event.target.scrollHeight - event.target.scrollTop == event.target.clientHeight   ? div2.appendChild(document.getElementById("demo")):""
+},2000));
+let div2 = document.getElementById('myDIV2');
+function myFunction(fn,delay) {
+    let previous ;
+    let _self = this;
+    return () =>{
+         if(!previous){
+            previous = new Date().getTime();
+         }
+         if(new Date().getTime() - previous > delay){
+            previous = new Date().getTime();
+            fn.call(_self);
+         }else{
+             return
+         }
+    }
+}
+</script>
+</body>
+</html>

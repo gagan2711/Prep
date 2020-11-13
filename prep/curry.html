@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(){
+                    let args = [...arguments]
+                    function addReturn(){
+                        let args2 = [...arguments]
+                        return add(...args,...args2)
+                    }
+                    let total = args.reduce((total,val)=>{
+                    return total+val
+                    },0)
+                    addReturn.total = total
+                    return addReturn
+        }
+
+        function add(val){
+                return function(val2){
+                    if(val2){
+                        return add(val+val2);
+                    }else{
+                        return val
+                    }
+           }
+        }
+alert(add(1)(2)(3))
+    </script>
+</body>
+</html>

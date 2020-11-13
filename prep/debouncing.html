@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="myBtn"></button>
+    <script>
+        const debounce = (fun,delay)=>{
+            var timeOut;
+            return (...args)=>{
+                if(timeOut){
+                    clearTimeout(timeOut)
+                }
+                timeOut = setTimeout(() => {
+                        fun(...args)
+                    }, delay);
+              }
+        }
+        document.getElementById("myBtn").addEventListener("click",  ((e)=>{
+               console.log("sdfdsf")
+        },2000))
+    </script>
+</body>
+</html>

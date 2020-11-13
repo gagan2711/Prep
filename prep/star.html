@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .star{
+            height: 30px;
+            width:30px;
+            margin-left:10px;
+            background-color: gray;
+        }
+        .selected{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div data-count ="1" class="star"></div>
+        <div data-count ="2" class="star"></div>
+        <div data-count ="3" class="star"></div>
+        <div data-count ="4" class="star"></div>
+        <div data-count ="5" class="star"></div>
+    </div>
+    <script>
+        var $container = document.querySelector(".container");
+        var startList = $container.children;
+        var selectedItem = -1;
+        function selectItems(itemNo){
+            for(let i=0;i<startList.length;i++){
+                if(itemNo>=i+1){
+                    startList[i].classList.add('selected')
+                }else{
+                    startList[i].classList.remove('selected')
+                }
+            }
+        }
+        $container.addEventListener('mouseover',(e)=>{
+            let no = e.target.getAttribute('data-count');
+              selectItems(no)
+        })
+        $container.addEventListener('mouseout',(e)=>{
+              selectItems(selectedItem)
+        })
+        $container.addEventListener('click',(e)=>{
+              let no = e.target.getAttribute('data-count');
+              selectedItem = no;
+              selectItems(no)
+        })
+    </script>
+</body>
+</html>

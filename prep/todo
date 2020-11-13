@@ -1,0 +1,75 @@
+type ahead
+sorting 
+filtering 
+functional component
+Performance on application
+DFS BFS 
+web performance optimization 
+List down the features 
+snake ladder game 
+Performance on customer facing application
+Chatting application design 
+How to make cerculer list of images 
+How to remove and add content in dom for performance 
+server side rendering 
+font display use swap 
+tools to fetch critical css to add them inline css
+prograssively load content 
+react loadable
+picture images
+async and importance attributes for script tag coming 
+rel preload for images
+http1 http2
+performance tool :- light house 
+gtmetrix.com
+tty media types
+outline property
+offsetHeight
+intersection observer
+React Suspence 
+Heap 
+Queue
+Tree
+JS :- Performance optimization, Http connections details ,
+Windowing, list virtualization, dom node recycling
+Events :- left swipe , right swipe only with JS, device  support for the feature like styles . . .
+design patterns : - JS design yahoo mixing etc 
+API design ,Server Sent Events , web sockets ,  
+aproach lazy suspence , virtual dom 
+Js the good parts.
+CSS :- Specificity calculation how to do themeing for entire application. 
+       Shadow root and shadow dom.
+Promise
+Generator or iterator. 
+animation , CSS zang free animation , GPU or CPU animation 
+3D animation 
+translate ya increasing width.
+Array link list :- recursion  
+Reflow 
+mutation 
+repaint and reflow
+production build vs development build in react 
+transform translate
+Even crome is coming with module loaded concept
+iframe
+template element
+swipe right / left implement 
+invisible attribute(Dom)
+like searching or sorting data in a performent way 
+Stick to transform and opacity changes for your animations
+hasOwnProperty
+try catch throw behaviour 
+
+
+
+
+Smooth scrolling with windowing where data is coming from service
+Star application
+Type ahead Implementation 
+Carashoul implementation 
+custom arrttribute, custom element
+Array.from
+rem,fr units in css
+pointer events
+navigators
+Tempating liberaries 

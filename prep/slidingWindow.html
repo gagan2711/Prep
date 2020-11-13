@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // asdfgsasdr
+        const longestSubstingWithoutRepeating = (str)=>{
+            let i = 0;
+            let map = {};
+            let maxLength = 0,currLength = 0
+            for(let k=0;k<=str.length-1;k++){
+                if(map[str.charAt(k)] || map[str.charAt(k)]==0){
+                    i = map[str.charAt(k)]+1
+                }else{
+                    map[str.charAt(k)] = k;
+                }
+                currLength = k - i + 1;
+                if(currLength > maxLength){
+                    maxLength = currLength
+                }
+            }
+            return maxLength
+
+        }
+        alert(longestSubstingWithoutRepeating('abcdamnkjloiuy'))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

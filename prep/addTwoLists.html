@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //head = {value:4,next:{value:5,next:{}}}
+        const addTwoLists = (list1,list2)=>{
+            let p = list1;
+            let q = list2;
+            let head = {value:0}
+            let carry = 0;
+            let rtn = head
+            while(p!= null || q!=null){
+                let x = p!=null ? p.value :0
+                let y = q!=null ? q.value :0
+                let sum = x+y+carry
+                carry = parseInt(sum / 10);
+                rtn.value= rtn.value+sum%10;
+                rtn.next = {value:carry};
+                rtn = rtn.next;
+                if(p!=null) p = p.next;
+                if(q!=null) q = q.next;
+            }
+            debugger
+            return rtn1.toString()
+        }
+        alert(addTwoLists({value:2,next:{value:4,next:{value:3}}},{value:5,next:{value:6,next:{value:4}}}))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[2,3,3,3,3,33,3,3,3];
+        arr.reduce(function(total,val,index,arr){
+            debugger;
+        },0)
+        Array.prototype.myReduce = function(func,initialVal){
+              for(let i=0;i<this.length;i++){
+                  initialVal = func(initialVal,this[i],i,this)
+              }
+              return initialVal;
+        } 
+        alert(arr.myReduce(function(total,val,index,arr){
+            return total+val
+        },0));
+
+    </script>
+</body>
+</html>

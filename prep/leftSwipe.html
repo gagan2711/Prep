@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="item" style="height:100px;widows: 300px;background-color:red;">Try me</div>
+   <script>
+      let item = document.querySelector(".item");
+      let x,y;
+      item.addEventListener("mousedown",(e)=>{
+           x = e.clientX;
+      })
+      item.addEventListener("mouseup",(e)=>{
+           if(x){
+               if(e.clientX > x){
+                    console.log("rightSwipe")
+               }else if(e.clientX < x){
+                    console.log("leftSwipe")
+               }
+           }
+      })
+   </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Loading rendering and responding to user input.
+Performance impact is to be considered on small devices like phone and different browsers. 
+React windowing, react virtualizer
+Virtual scrolling without loosing indexability 

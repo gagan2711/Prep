@@ -1,0 +1,43 @@
+.carasoul {
+	width: 30%;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
+}
+.caraImg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.ul-container {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+.ul-cara {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	transition: transform 240ms ease-in;
+	width: 100%;
+	height: 100%;
+}
+html {
+	overflow-x: hidden;
+}
+.li-cara {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+.btn--left {
+	position: absolute;
+	top: 50%;
+	left: -30px;
+}
+.btn--right {
+	position: absolute;
+	top: 50%;
+	right: -30px;
+}

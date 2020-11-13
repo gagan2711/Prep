@@ -1,0 +1,2 @@
+Scroll happens in a seprate thread and that notifies the javascript
+if we pass 60 ms frame then their will be a lag

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            height: 300px;
+            width:500px;
+            background-color: red;
+            border-right: 5px solid black;
+            position:absolute;
+            top:0px;
+            bottom:0px;
+        }
+        .itemContainer{
+            width: 500px;
+            position: relative;
+        }
+    </style>
+</head>
+<body><div>
+        <button class="left">left</button>
+        <button class="right">right</button>
+        <div class="itemContainer">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="e"></div><div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+    </div>
+    <script>
+        Function.prototype.myBind = function(...args){
+                 let _self = this;
+                 let args1 = args.slice(1);
+                 return function(...arg2){
+                    _self.apply(args[0],[...args2,...args1])
+                 }
+        }
+        //We have out that to functions only 
+        Function.prototype.method = function(name,func){
+            debugger;
+             this.prototype[name] = func;
+             return this
+        }
+        Array.method('sum',()=>{
+               //alert("i have been called")
+        })
+        var obj = new Array(5).fill('1')
+        obj.sum();
+        function checkIfClassIsThere(node){
+            if(node.classList.length > 0) {
+                //alert("yes"+node.classList[0])
+            } else {
+                //alert("false")
+            }
+        }
+        var walk = function(node,func){
+            func(node);
+            /*
+            var childList = Array.from(node.children) // = node.children
+            for(let i =0;i<childList.length;i++){
+                walk(childList[i],fu);
+            }
+            */
+            node = node.firstChild
+            while(node){
+                walk(node,func);
+                node = node.nextSibling
+            }
+        }
+        walk(document.getElementsByTagName('body')[0],checkIfClassIsThere)
+    </script>
+</body>
+</html>

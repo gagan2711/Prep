@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainContainer{
+                height:300px;
+                width:300px;
+                overflow:hidden;
+        }
+        .container{
+            position: relative;
+            transition: transform 1s ease-in;
+            will-change: transform;
+        }
+        .content{
+            position: absolute;
+            top:0px;
+            height:300px;
+            width:100%;
+        }
+        .container img{
+            max-width: 100%;
+        }
+        .red{
+            background-color: red;
+            left:0px;
+        }
+        .green{
+            background-color: green;
+            left:300px;
+        }
+        .blue{
+            background-color: blue;
+            left:600px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="left">left</button>
+        <button id="right">right</button>
+        <img id="df">
+        <div class="mainContainer">
+            <div id="container" class="container">
+            </div>
+        </div>
+       
+        <template id ="cara-content">
+            <style>
+                img {
+                    max-width: 100%;
+                }
+                .content{
+                        position: absolute;
+                        top:0px;
+                        height:300px;
+                        width:100%;
+                        background-color:#f4f4f4;
+                }
+            </style>
+            <div class="content">
+                <img >
+            </div>
+        </template>
+        <script src="./app.js"></script>
+</body>
+</html>

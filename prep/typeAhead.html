@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             position:relative;
+        }
+        .itemContainer{
+            display: none;
+        }
+        .inpt:focus + .itemContainer{
+            display: block;
+        }
+    </style>
+    <script>
+        let val = localStorage.getItem("val");
+        alert("localStorage"+val);
+        
+        localStorage.setItem("val","gagan");
+        
+
+        let val2 = sessionStorage.getItem("val");
+        alert("sessionStorage"+val2);
+
+        sessionStorage.setItem("val","gagan");
+       
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input class="inpt">
+        <div class="itemContainer">
+            <ul>
+                <li>ert</li>
+                <li>erer</li>
+                <li>rere</li>
+                <li>ere</li>
+                <li>erer</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+         (x || y ) && !(x && y)
+    </script>
+</body>
+</html>

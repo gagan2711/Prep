@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="GET">
+        <input type="text" name="q" placeholder="google search"/>
+        <input type="submit" name="q" value="Google Search"/>
+    </form>
+    <script>
+        // var worker;
+        // function startWorker(){
+            
+        // }
+        // if(typeof Worker != 'undefined'){
+        //         if(!worker){
+        //             worker = new Worker('worker.js');
+        //             worker.postMessage("")
+        //         }    
+        // }
+        // worker.onmessage =function(data){
+        //     alert(data);
+        // };
+        // function stopWorker(){
+        //     worker.terminate();
+        //     worker = undefined
+    </script>
+    <script>
+        function makeAjaxCall(){
+            fetch("https://www.google.com/complete/search?q=cor&cp=3&client=psy-ab&xssi=t&gs_ri=gws-wiz&hl=en-IN&authuser=0&psi=zbMBX5SZIuaP4-EP_8ClyAM.1593947085857&ei=zbMBX5SZIuaP4-EP_8ClyAM").then(function(data){
+                debugger;
+            },function(data){
+                debugger;
+            });
+        }
+       // makeAjaxCall();
+    </script>
+</body>
+</html>
+<!-- ":authority": "www.google.com",
+                            ":method": "GET",
+                            ":path":"/complete/search?q=cor&cp=3&client=psy-ab&xssi=t&gs_ri=gws-wiz&hl=en-IN&authuser=0&psi=zbMBX5SZIuaP4-EP_8ClyAM.1593947085857&ei=zbMBX5SZIuaP4-EP_8ClyAM",
+                            ":scheme": "https",
+                            "accept": "*/*",
+                            "accept-encoding": "gzip, deflate, br",
+                            "accept-language": "en-US,en;q=0.9",
+                            "cache-control": "no-cache",
+                            "cookie": "CGIC=EhQxQzFHVFBNX2VuSU44MTRJTjgxNCJ8dGV4dC9odG1sLGFwcGxpY2F0aW9uL3hodG1sK3htbCxhcHBsaWNhdGlvbi94bWw7cT0wLjksaW1hZ2Uvd2VicCxpbWFnZS9hcG5nLCovKjtxPTAuOCxhcHBsaWNhdGlvbi9zaWduZWQtZXhjaGFuZ2U7dj1iMztxPTAuOQ; CONSENT=YES+IN.en-GB+20170416-18-0; SEARCH_SAMESITE=CgQI748B; OGPC=19018621-1:; SID=ywfUuhskUvlPegv9PlTv_NL9OalWyAYDVa_SpbtpKuBneGxv4p8ogLKlI3D-Rmsks6zC-g.; __Secure-3PSID=ywfUuhskUvlPegv9PlTv_NL9OalWyAYDVa_SpbtpKuBneGxv9W3OLZz5uv5GYa16I6eeYA.; HSID=AAcuHmunpuIr_aCqi; SSID=A4osudtG6b9-DHO1P; APISID=Y3h_xPuhWrw1GxEp/Ax12JVVo7WMs-SUoV; SAPISID=DTyGUCg4bZlpTFbl/AT26Eevm-sqbLj_jK; __Secure-HSID=AAcuHmunpuIr_aCqi; __Secure-SSID=A4osudtG6b9-DHO1P; __Secure-APISID=Y3h_xPuhWrw1GxEp/Ax12JVVo7WMs-SUoV; __Secure-3PAPISID=DTyGUCg4bZlpTFbl/AT26Eevm-sqbLj_jK; NID=204=NQfAfDcQ4mowEzzubDhcDN6sg_0xhBvy9_iJcwdFjUbgnajLUJL1Y_PDx4Jj0yHr2OBHPyDRQe4vcgKc7R84T-CRDFdCh_HBMQIkuPVRUe5zRz3oljXcZY1WUsil5GGppIZlx3ZoraU1bHgNPOYFpsAFk1FCZSVxNx9Z8C6rBrByp4ixGzBNGDUE3RaPXnc0cRpwLzwxFZBFECZfH1W--ZHrOjwHMBX10USj1bUQg5Sj25u6XxFlKG1T6JqX0zXD-e0hWhzHJ8tSXOa_HhycqbWTe8p8hX9sn4rxJNjTNAqqihX8drmTrdwA9BrCxVet10wQFf_VMjm3ItVD3i1f_DuBG8Sn; 1P_JAR=2020-7-5-11; SIDCC=AJi4QfHfkRD8fjZ7BIX0Wb0DgNIz6jvO6peEkOaIdJ6Ju-tjB-YKZyUgukRFu-PlXXBkPTXDs1c",
+                            "pragma": "no-cache",
+                            "referer": "https://www.google.com/",
+                            "sec-fetch-dest": "empty",
+                            "sec-fetch-mode": "cors",
+                            "sec-fetch-site": "same-origin",
+                            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36",
+                            "x-client-data": "CJG2yQEIorbJAQjEtskBCKmdygEIiqzKAQjoyMoBGJu+ygE=" -->

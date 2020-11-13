@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const twoSum = (arr,target)=>{
+            let map = {};
+            let result = false;
+            arr.forEach((item,index)=>{
+               if(map[target-item]){
+                   result = true;
+               }else{
+                   map[item] =index;
+               }
+            })
+            return result
+        }
+        alert(twoSum([2,4,6,7],9))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
