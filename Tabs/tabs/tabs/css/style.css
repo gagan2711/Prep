@@ -1,0 +1,11 @@
+.header {
+}
+.tabItem {
+	border: 1px solid gray;
+	list-style: none;
+	display: inline-block;
+	padding: 15px;
+}
+.tabItem[active="true"] {
+	background-color: gray;
+}

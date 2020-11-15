@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .some {
+        border: 1px solid black;
+        height: 700px;
+    }
+    .mainCointainer{
+       position: relative;
+    }
+    .container{
+        position: absolute;
+        top:50px
+    }
+    .header{
+        position: absolute;
+    }
+    .listTabs li{
+      list-style: none;
+        display: inline-block;
+        border: 1px solid gray;
+        border-radius: 3px;
+        padding: 5px;
+    }
+    .listTabs .active{
+       background-color: #c0a6a6;
+    }
+</style>
+
+<body>
+    <div class="mainCointainer">
+        <div class="header">
+            <ul class="listTabs">
+                <li class="active"> <a id="home" href="#home">home</a></li>
+                <li>  <a href="#admin">admin</a></li>
+                <li> <a href="#projects">projects</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div id="home" class="some">
+                Home
+            </div>
+            <div id="admin" class="some">
+                Admin
+            </div>
+            <div id="projects" class="some">
+                Projects
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("home").addEventListener('click',function(ev){
+           debugger
+        })
+    </script>
+</body>
+
+</html>
